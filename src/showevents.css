@@ -1,0 +1,82 @@
+.container{
+	
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: lightgreen;
+	margin: 10%;
+	padding:2% 10%;
+	width: auto;
+}
+.list{
+	align-self: center;
+	width: 100%;
+	border-style: groove;
+	border-width: 3px 20px 4px 8px;
+	border-radius: 4px;
+}
+.modal{
+	width: 80%;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: scroll;
+	transform: translate(-50%, -50%);
+	perspective: 1000px;
+	background-color: papayawhip;
+}
+.modal-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+.closeModal{
+	font-size: 1.5em;
+	float: right ;
+	margin: 0 2px;
+	color: gray;
+}
+.card{
+	width: 60px;
+}
+.avatar{
+	width: 50px;
+	height: 50px;
+	border: solid white 2px;
+	border-radius: 50%;
+}
+.member{
+	text-align: center;
+	font-size: 0.5em;
+}
+.collapse{
+	font-size: 1em;
+	width: 80px;
+	border: 0;
+	color: blue;
+	background: lightgreen;
+	margin: 1px;
+	padding: 2px 10px 0 0;
+}
+.modal-button{
+	float: left;
+	font-size: 1em;
+	width: 80px;
+	border: 0;
+	background: lightgreen;
+	color: red;
+	margin: 1px;
+	padding: 2px 10px 0 10px;
+}
+.group{
+	margin: 8px 0;
+	border-style: groove;
+	border-color: black;
+	border-width: 0px 0px 2px 0px;
+}
+.time{
+	font-size: 0.8em;
+}
