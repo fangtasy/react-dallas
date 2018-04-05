@@ -16,7 +16,7 @@ class Showevents extends Component{
 
 	}
 	componentDidMount(){
-		axios.get('http://api.meetup.com/reactjs-dallas/events')
+		axios.get('reactjs-dallas/events')
 		.then(res=>{
 			this.setState({events:res.data})
 		})
@@ -97,7 +97,7 @@ class Getrsvps extends Component{
 		}
 	}
 	componentDidMount(){
-		axios.get(`http://api.meetup.com/reactjs-dallas/events/${this.props.id}/rsvps`)
+		axios.get(`reactjs-dallas/events/${this.props.id}/rsvps`)
 		.then(res=>{
 			this.setState({
 				organizer:res.data.find(item => item.member.role === 'organizer'),
